@@ -3,7 +3,7 @@
 	margin: 0;
 	list-style: none;
 }
-a { text-decoration: none;color:blue;}
+a { text-decoration: none;color:#3d92d3;}
 a:link {text-decoration: none;} /* 没访问过的链接样式 */
 a:visited {text-decoration: none;} /* 访问过的链接样式 */
 a:hover {text-decoration: none;background-color: transparent;} /* 鼠标进入链接区域的链接样式 */
@@ -13,6 +13,9 @@ a:focus {text-decoration: none;background-color: transparent;}
     src: url('../fonts/beiseniconfont.woff') format('woff'), /* chrome、firefox */
     url('../fonts/beiseniconfont.ttf') format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
 }
+.clearfix:after {content:"\200B"; display:block; height:0; clear:both; }
+
+.clearfix { *zoom:1; }
 .iconfont{
 	font-family:"iconfont";
 	font-style:normal;
@@ -43,7 +46,7 @@ a:focus {text-decoration: none;background-color: transparent;}
 	z-index: -1;
 }
 .home .contian{
-	margin-top: 5%;
+	padding-top: 5%;
 }
 .home .flex_contain{
 	flex:1;
@@ -124,21 +127,24 @@ a:focus {text-decoration: none;background-color: transparent;}
 	font-size: 14px;
 }
 .job_contain{
-	display: flex;
+	display: block;
 	width: 100%;
-	flex-direction:row;
+	/*flex-direction:row;
 	flex-wrap:wrap;
-	margin: 50px 0;
+	box-lines: multiple;
+*/	margin: 50px 0;
+	box-sizing:border-box;
 }
 .job_item{
-	display: flex;
-	flex:initial;
+	display: block;
+	/*flex:initial;*/
 	width: 33%;
-	height: 120px;
-	justify-content:center;
+	float: left;
+	text-align: center;
+/*	justify-content:flex-start;
 	align-items:center;
 	flex-direction:column;
-}
+*/}
 .job_icon{
 	width: 80px;
 	height: 80px;
@@ -147,10 +153,12 @@ a:focus {text-decoration: none;background-color: transparent;}
 	background-size: 50px;
 	background-repeat: no-repeat;
 	background-position: center;
+	margin: 0 auto;
 }
 .job_contain .job_item p{
 	color: #FFF;
 	padding: 10px 0;
+	height: 30px;
 }
 .job_body .serch{
 	position: absolute;
@@ -289,6 +297,7 @@ a:focus {text-decoration: none;background-color: transparent;}
 	line-height: 40px;
 }
 .job_body .search_sub{
+	display: block;
 	width: 150px;
 	height: 50px;
 	background: #3d92d3;
@@ -323,7 +332,7 @@ a:focus {text-decoration: none;background-color: transparent;}
 	min-height: 500px;
 	width: 100%;
 }
-.detail_body .sideline{
+.detail_body .detail_contain{
 	height: 100%;
 }
 /*.fl1 ul{
