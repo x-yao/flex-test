@@ -31,20 +31,20 @@ module.exports = function(grunt) {
 	            dest: 'fonts/'
 	        }
     	},
-    	ttf2eot: {
-		   default: {
-		     src: 'fonts/*.ttf',
-		     dest: 'fonts/'
-		   }
-  		}
+    // 	ttf2eot: {
+		  //  default: {
+		  //    src: 'fonts/*.ttf',
+		  //    dest: 'fonts/'
+		  //  }
+  		// }
 
 	});
-	grunt.loadNpmTasks('grunt-ttf2eot');
+	// grunt.loadNpmTasks('grunt-ttf2eot');
 	grunt.loadNpmTasks('grunt-ttf2woff');
 	grunt.loadNpmTasks('grunt-postcss');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.registerTask('default', ['postcss']);
 	grunt.registerTask('css', ['postcss','watch']);
-	grunt.registerTask('fonts', ['ttf2woff','ttf2eot']);
+	grunt.registerTask('fonts', ['ttf2woff']);
 
 };
