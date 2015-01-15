@@ -53,6 +53,7 @@ a:focus {text-decoration: none;background-color: transparent;}
 	width: 100%;
 	height: 100%;
 	background: #CCC;
+	overflow: hidden;
 	transition:transform 1s ease-in-out;
 }
 .slide_arrd{
@@ -64,7 +65,7 @@ a:focus {text-decoration: none;background-color: transparent;}
 	text-align: center;
 }
 .homebackground0{
-	width: 100%;	
+	width: 100%;
 }
 .home .contian{
 	padding-top: 5%;
@@ -207,18 +208,18 @@ a:focus {text-decoration: none;background-color: transparent;}
 	height: 20px;
 	background: #CCC;
 	color: #FFF;
-	border-radius: 20px;
-	left: 220px;
-	top: 5px;
+	border-radius: 50%;
+	left: 230px;
+	top: 15px;
 	text-align: center;
 	line-height: 20px;
-	padding: 10px;
-	background-clip:content; 
+	/*padding: 10px;*/
+	/*background-clip:content; */
 }
 .can.iconfont span {
 	position: absolute;
-	top: 11px;
-	left: 14px;
+	top: 1px;
+	left: 4px;
 }
 .job_body .serch_header .serch_con .ico_search{
 	position: absolute;
