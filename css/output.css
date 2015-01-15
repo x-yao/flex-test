@@ -21,7 +21,7 @@ a:focus {text-decoration: none;background-color: transparent;}
 	font-style:normal;
 	-webkit-font-smoothing: antialiased;
 }
-.home body{
+.home.suoding{
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -29,6 +29,12 @@ a:focus {text-decoration: none;background-color: transparent;}
 	left: 0;
 	bottom: 0;
 	right: 0;
+}
+.home{
+	-webkit-transition:-webkit-transform 1s ease-in-out;
+	   -moz-transition:-moz-transform 1s ease-in-out;
+	     -o-transition:-o-transform 1s ease-in-out;
+	        transition:transform 1s ease-in-out;
 }
 .hidden{
 	display: none;
@@ -50,6 +56,27 @@ a:focus {text-decoration: none;background-color: transparent;}
 	position: absolute;
 	width: 100%;
 	z-index: -1;
+}
+.first_slide{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #CCC;
+	-webkit-transition:-webkit-transform 1s ease-in-out;
+	   -moz-transition:-moz-transform 1s ease-in-out;
+	     -o-transition:-o-transform 1s ease-in-out;
+	        transition:transform 1s ease-in-out;
+}
+.slide_arrd{
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	color: #FFF;
+	font-size: 50px;
+	text-align: center;
+}
+.homebackground0{
+	width: 100%;	
 }
 .home .contian{
 	padding-top: 5%;
@@ -452,6 +479,35 @@ a:focus {text-decoration: none;background-color: transparent;}
 }
 .detail_body .detail_contain{
 	height: 100%;
+}
+.a_arr{
+	-webkit-animation:arrd 1s ease-in-out infinite;
+	   -moz-animation:arrd 1s ease-in-out infinite;
+	     -o-animation:arrd 1s ease-in-out infinite;
+	        animation:arrd 1s ease-in-out infinite;
+	-webkit-animation-direction: alternate;
+	   -moz-animation-direction: alternate;
+	     -o-animation-direction: alternate;
+	        animation-direction: alternate;
+}
+@-webkit-keyframes arrd {
+	0%{-webkit-transform:translateY(-10px);transform:translateY(-10px);opacity: 1;}
+	100%{-webkit-transform:translateY(10px);transform:translateY(10px);opacity: .4;}
+}
+@-moz-keyframes arrd {
+	0%{-moz-transform:translateY(-10px);transform:translateY(-10px);opacity: 1;}
+	100%{-moz-transform:translateY(10px);transform:translateY(10px);opacity: .4;}
+}
+@-o-keyframes arrd {
+	0%{-o-transform:translateY(-10px);transform:translateY(-10px);opacity: 1;}
+	100%{-o-transform:translateY(10px);transform:translateY(10px);opacity: .4;}
+}
+@keyframes arrd {
+	0%{-webkit-transform:translateY(-10px);-moz-transform:translateY(-10px);-o-transform:translateY(-10px);transform:translateY(-10px);opacity: 1;}
+	100%{-webkit-transform:translateY(10px);-moz-transform:translateY(10px);-o-transform:translateY(10px);transform:translateY(10px);opacity: .4;}
+}
+.trsy1{
+	/*transform: translateY(-100%);*/
 }
 /*.fl1 ul{
 	display: flex;

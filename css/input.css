@@ -21,7 +21,7 @@ a:focus {text-decoration: none;background-color: transparent;}
 	font-style:normal;
 	-webkit-font-smoothing: antialiased;
 }
-.home body{
+.home.suoding{
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -29,6 +29,9 @@ a:focus {text-decoration: none;background-color: transparent;}
 	left: 0;
 	bottom: 0;
 	right: 0;
+}
+.home{
+	transition:transform 1s ease-in-out;
 }
 .hidden{
 	display: none;
@@ -44,6 +47,24 @@ a:focus {text-decoration: none;background-color: transparent;}
 	position: absolute;
 	width: 100%;
 	z-index: -1;
+}
+.first_slide{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #CCC;
+	transition:transform 1s ease-in-out;
+}
+.slide_arrd{
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	color: #FFF;
+	font-size: 50px;
+	text-align: center;
+}
+.homebackground0{
+	width: 100%;	
 }
 .home .contian{
 	padding-top: 5%;
@@ -334,6 +355,17 @@ a:focus {text-decoration: none;background-color: transparent;}
 }
 .detail_body .detail_contain{
 	height: 100%;
+}
+.a_arr{
+	animation:arrd 1s ease-in-out infinite;
+	animation-direction: alternate;
+}
+@keyframes arrd {
+	0%{transform:translateY(-10px);opacity: 1;}
+	100%{transform:translateY(10px);opacity: .4;}
+}
+.trsy1{
+	/*transform: translateY(-100%);*/
 }
 /*.fl1 ul{
 	display: flex;
