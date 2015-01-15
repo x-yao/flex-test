@@ -326,6 +326,10 @@ a:focus {text-decoration: none;background-color: transparent;}
 	top: 0px;
 	font-size: 28px;
 	padding: 0 10px;
+	-webkit-transition:-webkit-transform .4s ease-in-out;
+	   -moz-transition:-moz-transform .4s ease-in-out;
+	     -o-transition:-o-transform .4s ease-in-out;
+	        transition:transform .4s ease-in-out;
 }
 .job_body .search_input {
 	display: -webkit-box;
@@ -504,8 +508,12 @@ a:focus {text-decoration: none;background-color: transparent;}
 	0%{-webkit-transform:translateY(-10px);-moz-transform:translateY(-10px);-o-transform:translateY(-10px);transform:translateY(-10px);opacity: 1;}
 	100%{-webkit-transform:translateY(10px);-moz-transform:translateY(10px);-o-transform:translateY(10px);transform:translateY(10px);opacity: .4;}
 }
-.trsy1{
-	/*transform: translateY(-100%);*/
+.xuanzhuan{
+	-webkit-transform:rotate(180deg);
+	   -moz-transform:rotate(180deg);
+	    -ms-transform:rotate(180deg);
+	     -o-transform:rotate(180deg);
+	        transform:rotate(180deg);
 }
 /*.fl1 ul{
 	display: flex;

@@ -7,6 +7,7 @@ $(document).ready(function() {
 	$(".job_click_ser").on("click", function() {
 		$(".search_contain").toggleClass("job_appear");
 		$(".job_body > section").toggleClass("hidden");
+		$(".job_click_ser").toggleClass("xuanzhuan");
 	});
 	$(".can").on("click", function() {
 		$(this).parent().find(".serch").val("");

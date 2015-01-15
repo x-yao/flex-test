@@ -238,6 +238,7 @@ a:focus {text-decoration: none;background-color: transparent;}
 	top: 0px;
 	font-size: 28px;
 	padding: 0 10px;
+	transition:transform .4s ease-in-out;
 }
 .job_body .search_input {
 	display: flex;
@@ -365,8 +366,8 @@ a:focus {text-decoration: none;background-color: transparent;}
 	0%{transform:translateY(-10px);opacity: 1;}
 	100%{transform:translateY(10px);opacity: .4;}
 }
-.trsy1{
-	/*transform: translateY(-100%);*/
+.xuanzhuan{
+	transform:rotate(180deg);
 }
 /*.fl1 ul{
 	display: flex;
