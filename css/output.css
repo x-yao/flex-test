@@ -112,6 +112,7 @@ a:focus {text-decoration: none;background-color: transparent;}
 	   -moz-box-direction:normal;
 	    -ms-flex-direction:column;
 	        flex-direction:column;
+	        width: 0%; 
 }
 .home .flex_contain p{
 	color: #FFF;
